@@ -1,0 +1,24 @@
+language: c
+
+sudo: required
+before_install:
+  - sudo apt-get install gfortran
+  
+matrix:
+  include:
+  - os: linux
+    dist: trusty
+    sudo: required
+    env: PLUMED_CC=mpif90 PLUMED_CXX=mpif90  MAKEDOC=yes PLUMED_ALL_TESTS=yes
+  - os: linux
+    dist: trusty
+    sudo: required
+    env: PLUMED_CC=mpif90 PLUMED_CXX=mpif90  PLUMED_CXXFLAGS=-O3 LAPACK=yes CONFIG_FLAGS="--disable-external-lapack"
+
+install:
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get update -qq ; fi
+  - if test "$PLUMED_CXX" == "mpif90" -a "$TRAVIS_OS_NAME" == "linux" ; then sudo apt-get install -y libopenmpi-dev openmpi-bin ; fi
+  - make
+
+script: 
+  - if test "$PLUMED_CXX" ; then make; fi
