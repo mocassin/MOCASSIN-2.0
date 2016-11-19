@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Mocassin-2.0 : MOCASSIN - MOnte CArlo SimulationS of Ionized Nebulae, Version 2.0">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Mocassin-2.0</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/mocassin/MOCASSIN-2.0">View on GitHub</a>
+
+          <h1 id="project_title">Mocassin-2.0</h1>
+          <h2 id="project_tagline">MOCASSIN - MOnte CArlo SimulationS of Ionized Nebulae, Version 2.0</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/mocassin/MOCASSIN-2.0/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/mocassin/MOCASSIN-2.0/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a id="mocassin-20" class="anchor" href="#mocassin-20" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MOCASSIN-2.0</h2>
+
+<p><strong>MOnte CArlo SimulationS of Ionized Nebulae</strong>, Version 2.0</p>
+
+<p><em>3D Monte Carlo Photoionization and Dust Radiative Transfer Code</em></p>
+
+<p>Copyright (C) 2005 Barbara Ercolano</p>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
+
+<p>How to compile:</p>
+
+<pre><code>make mocassin
+make mocassinWarm
+make mocassinOutput
+make mocassinPlot
+</code></pre>
+
+<p>What typical packages required to compile mocassin on linux:</p>
+
+<pre><code>gcc openmpi
+</code></pre>
+
+<p>or</p>
+
+<pre><code>intel/mpi
+</code></pre>
+
+<p>How to clean:</p>
+
+<pre><code>make clean
+</code></pre>
+
+<p>How to run:</p>
+
+<pre><code>mpirun -np N ./mocassin
+</code></pre>
+
+<p>where N is number of processors for parallel computing.</p>
+
+<p>How to run mpirun on a supercomputer:</p>
+
+<p>In the <a href="https://github.com/equib/mocassin-models/tree/master/batches">batches folder</a> of <a href="https://github.com/equib/mocassin-models">mocassin-models</a>, there are running batch examples for different job scheduling systems. </p>
+
+<p>To submit a batch file on the Portable Batch System (<em>PBS</em>):</p>
+
+<pre><code> qsub mocassin_run.job
+</code></pre>
+
+<p>To submit a batch file on the Sun Grid Engine (<em>SGE</em>):</p>
+
+<pre><code> qsub mocassin_run.job
+</code></pre>
+
+<p>To submit a batch file on the Simple Linux Utility for Resource Management (<em>SLURM</em>): </p>
+
+<pre><code> sbatch mocassin_run.sh
+</code></pre>
+
+<h3>
+<a id="references" class="anchor" href="#references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>References</h3>
+
+<ul>
+<li><p>Ercolano, B., Barlow, M. J., Storey, P. J., &amp; Liu, X.-W., "MOCASSIN: a fully three-dimensional Monte Carlo photoionization code", <a href="http://adsabs.harvard.edu/abs/2003MNRAS.340.1136E">MNRAS, 340, 1136, 2003</a></p></li>
+<li><p>Ercolano, B., Barlow, M. J., &amp; Storey, P. J., "The dusty MOCASSIN: fully self-consistent 3D photoionization and dust radiative transfer models", <a href="http://adsabs.harvard.edu/abs/2005MNRAS.362.1038E">MNRAS, 362, 1038, 2005</a></p></li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Mocassin-2.0 maintained by <a href="https://github.com/mocassin">mocassin</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
