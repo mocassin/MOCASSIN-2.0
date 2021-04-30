@@ -540,11 +540,9 @@ module iteration_mod
                              ! estimators of Jste and Jdif at every grid cell
                              if (taskid < rest) then
                                 load = load+1
-                                call energyPacketDriver(iStar=0,n=load, grid=grid(1:nGrids), &
-                                     & gpLoc=gpLoc, cellLoc=cellLoc)
+                                call energyPacketDriver(iStar=0,n=load, grid=grid(1:nGrids), gpLoc=gpLoc, cellLoc=cellLoc)
                              else
-                                call energyPacketDriver(iStar=0,n=load, grid=grid(1:nGrids), &
-                                     & gpLoc=gpLoc, cellLoc=cellLoc)
+                                call energyPacketDriver(iStar=0,n=load, grid=grid(1:nGrids), gpLoc=gpLoc, cellLoc=cellLoc)
                              end if
            
                              call mpi_barrier(mpi_comm_world, ierr)
