@@ -541,10 +541,10 @@ module iteration_mod
                              if (taskid < rest) then
                                 load = load+1
                                 call energyPacketDriver(iStar=0,n=load, grid=grid(1:nGrids), &
-                                     & gpLoc=gpLoc, cellLoc=cellLoc)
+                                     & gpLoc, cellLoc=cellLoc)
                              else
                                 call energyPacketDriver(iStar=0,n=load, grid=grid(1:nGrids), &
-                                     & gpLoc=gpLoc, cellLoc=cellLoc)
+                                     & gpLoc, cellLoc=cellLoc)
                              end if
            
                              call mpi_barrier(mpi_comm_world, ierr)
