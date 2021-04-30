@@ -7,11 +7,13 @@ before_install:
 matrix:
   include:
   - os: linux
-    dist: trusty
+    dist: focal
+    arch: amd64
     sudo: required
     env: PLUMED_CC=mpif90 PLUMED_CXX=mpif90  MAKEDOC=yes PLUMED_ALL_TESTS=yes
   - os: linux
-    dist: trusty
+    dist: focal
+    arch: amd64
     sudo: required
     env: PLUMED_CC=mpif90 PLUMED_CXX=mpif90  PLUMED_CXXFLAGS=-O3 LAPACK=yes CONFIG_FLAGS="--disable-external-lapack"
 
