@@ -1,5 +1,5 @@
 ## MOCASSIN-2.0
-[![Build Status](https://travis-ci.org/mocassin/MOCASSIN-2.0.svg?branch=master)](https://travis-ci.org/mocassin/MOCASSIN-2.0)
+[![Build Status](https://travis-ci.com/mocassin/MOCASSIN-2.0.svg?branch=master)](https://travis-ci.com/mocassin/MOCASSIN-2.0)
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/mocassin/mocassin-2.0)
 [![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)](https://github.com/mocassin/MOCASSIN-2.0/blob/master/LICENSE)
 
